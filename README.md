@@ -64,3 +64,83 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+# 🏨 Hotel Room Booking Web Application (Laravel)
+
+A full-stack hotel room booking web application built using **Laravel**. It allows users to browse and book rooms, apartments, or suites. Admins can manage rooms and bookings through a secure dashboard.
+
+---
+
+## 🚀 Features
+
+### 👤 User Panel
+- User registration and login
+- View categories:
+  - Single Bed Rooms
+  - Double Bed Rooms
+  - Apartments
+  - Suites
+- Book a room (payment integration excluded)
+- View personal bookings
+
+### 🛠️ Admin Panel
+- Secure admin login
+- Add, edit, or delete rooms
+- View and manage all bookings
+- Dashboard overview of room availability
+
+---
+
+## 🔧 Technologies Used
+- Laravel (PHP Framework)
+- Blade (Laravel templating)
+- MySQL (Database)
+- HTML, CSS, Bootstrap (Frontend)
+- Laravel Breeze (for auth scaffolding)
+
+---
+
+## 📁 Project Structure
+
+hotel-room-booking/
+├── app/
+├── database/
+│ └── migrations/
+├── public/
+├── resources/
+│ └── views/
+│ ├── user/
+│ └── admin/
+├── routes/
+│ └── web.php
+├── .env
+└── composer.json
+
+yaml
+Copy
+Edit
+
+---
+
+## 🛠️ Setup Instructions
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/hotel-room-booking-laravel.git
+   cd hotel-room-booking-laravel
+2. Install dependencies:
+composer install
+npm install && npm run dev
+
+3. Create .env file and configure your database:
+cp .env.example .env
+php artisan key:generate
+
+4. Migrate the database:
+php artisan migrate
+
+5. Run the Laravel development server:
+php artisan serve
+
+6. Open your browser:
+http://localhost:8000
